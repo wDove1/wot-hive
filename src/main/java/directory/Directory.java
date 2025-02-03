@@ -139,6 +139,9 @@ public class Directory {
 //	public static final Route redirect = (Request request, Response response) -> {
 //		//Redirect.
 //	}
+/**
+ * 
+ */
 	public static final Route getSelfDescription = (Request request, Response response) -> {
 		try {
 			String format = request.headers(Utils.HEADER_ACCEPT);
