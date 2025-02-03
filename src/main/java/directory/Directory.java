@@ -146,7 +146,7 @@ public class Directory {
 			String id = 	Utils.buildMessage("http://",request.raw().getServerName(), request.uri());
 			if(request.port()!=80)
 				id = Utils.buildMessage("http://",request.raw().getServerName(), ":", String.valueOf(request.port()), request.uri());
-
+			description.addProperty("id", id);
 			description.addProperty("@id", id);
 			if(format!=null && format.equals(Utils.MIME_TURTLE)) {
 				response.header(Utils.HEADER_CONTENT_TYPE, Utils.MIME_TURTLE);
